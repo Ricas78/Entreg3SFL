@@ -6,7 +6,7 @@ def criptografar_senha(senha):
 
 try:
     #Lendo a senha do arquivo txt fornececido pelo o usuário
-    with open('senha_errada.txt', 'r') as arquivo:
+    with open('senha_correta.txt', 'r') as arquivo:
         senha = arquivo.read().strip()
 except FileNotFoundError:
     sys.exit()
